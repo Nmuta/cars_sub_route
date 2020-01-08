@@ -8,4 +8,9 @@ export class CarsController {
             {make: 'subaru', model: 'outback'},
             {make: 'fiat', model: '123 spider'}];
   }
+
+  @Get(':id')
+  findOne(@Req() request: Request): {} {
+    return {make: 'tesla', model: 'model x'}
+  }
 }
