@@ -10,7 +10,7 @@ export class CarsController {
   }
 
   @Get('showcase')
-  findOne(@Req() request: Request): string {
+  showcase(@Req() request: Request): string {
     return 'this is the cars showcase';
   }
 }
